@@ -4,17 +4,15 @@ gsap.utils.toArray(".img-box").forEach(section => {
 	let tl = gsap.timeline({
 			scrollTrigger: {
 				trigger: section,
-				start: "center center",
-   // faz com que a altura da rolagem (durante a fixação) coincida com a largura, assim a velocidade permanece constante (vertical/horizontal)
-				end: () => "+=" + section.offsetWidth, 
+				start: "-20% top",
+                end: "100% top",
 				scrub: true,
 				pin: true,
                 anticipatePin: 3,
 			},
 			defaults: {ease: "none"}
 		});
-	// animate the container one way...
-	tl.fromTo(section.querySelector(".image90"), { xPercent: 100, x: 0}, {xPercent: 0})
-	  // ...and the image the opposite way (at the same time)
-	  .fromTo(section.querySelector(".image90 img"), {xPercent: 0, x: 0}, {xPercent: 0}, 0);
+	
+	tl.fromTo(section.querySelector(".image90"), {xPercent: -105, x:0}, {xPercent: 0})
+	  .fromTo(section.querySelector(".image91"), {xPercent: -105, x:0}, {xPercent: 0},0);
 });
