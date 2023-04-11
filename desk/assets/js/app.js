@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray(".section02").forEach(section => {
 
-	let tl = gsap.timeline({
+  let tl = gsap.timeline({
 		    duration: 1,
 			scrollTrigger: {
 			trigger: section ,
@@ -10,11 +10,9 @@ gsap.utils.toArray(".section02").forEach(section => {
 			pin: !0,
             scrub: !0,
 			},
-		
-			
 		});
 	
-		tl.to(".section02 .div43", { opacity: 1 })
+	  tl.to(".section02 .div43", { opacity: 1 })
 		.to(".section02 .div50", { opacity: 1 })
 		.to(".section02 .div53", { opacity: 1 })
 
@@ -23,7 +21,7 @@ gsap.utils.toArray(".section02").forEach(section => {
 gsap.utils.toArray(".img-box").forEach(section => {
 
 	let tl = gsap.timeline({
-		    
+		    duration: 1,
 			scrollTrigger: {
 			trigger: section,
 			start: "-30% top",
