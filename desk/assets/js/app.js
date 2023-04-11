@@ -67,7 +67,7 @@ gsap.utils.toArray(".div158 ").forEach(section => {
 		    duration: 1,
 			scrollTrigger: {
 			trigger: section,
-			start: "20% top",
+			start: "top top",
 			end: "100% top",
 			pin: !0,
             scrub: !0,
