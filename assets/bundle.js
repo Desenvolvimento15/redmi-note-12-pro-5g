@@ -1,6 +1,6 @@
 $(function (){
     $('.galeria').slick({
-    arrows: false,
+    arrows: true,
     dots: true,
     infinite: true,
     speed: 500,
