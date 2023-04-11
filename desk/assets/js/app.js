@@ -1,12 +1,10 @@
 gsap.registerPlugin(ScrollTrigger);
-
-gsap.registerPlugin(ScrollTrigger);
-gsap.utils.toArray(".section02").forEach(div => {
+gsap.utils.toArray(".section02").forEach(section => {
 
 	let tl = gsap.timeline({
 		    duration: 1,
 			scrollTrigger: {
-			trigger: div,
+			trigger: section ,
 			start: "top top",
 			end: "100% top",
 			pin: !0,
