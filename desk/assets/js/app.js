@@ -11,7 +11,6 @@ gsap.utils.toArray(".section02").forEach(div => {
 			end: "100% top",
 			pin: !0,
             scrub: !0,
-			anticipatePin: 3,
 			},
 		
 			
@@ -53,7 +52,7 @@ gsap.utils.toArray(".div116").forEach(section => {
 			end: "100% top",
 			pin: !0,
             scrub: !0,
-			anticipatePin: 3,
+	
 			},
 			defaults: {ease: "none"}
 			
