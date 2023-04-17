@@ -13,8 +13,7 @@ $(function (){
     })
     
     
-    
-      !(function (e, t) {
+!(function (e, t) {
         var i = t.documentElement;
         var tela = i.clientWidth || 320;
         //mobile
